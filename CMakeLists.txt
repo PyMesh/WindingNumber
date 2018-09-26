@@ -44,7 +44,7 @@ SET(INC_FILES
     VM_SSEFunc.h)
 
 ADD_LIBRARY(FastWindingNumber SHARED ${SRC_FILES} ${INC_FILES})
-TARGET_LINK_LIBRARIES(FastWindingNumber PUBLIC tbb tbbmalloc tbbmalloc_proxy)
+TARGET_LINK_LIBRARIES(FastWindingNumber PUBLIC tbb tbbmalloc)
 
 ADD_SUBDIRECTORY(tests EXCLUDE_FROM_ALL)
 
